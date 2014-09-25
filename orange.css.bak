@@ -113,7 +113,7 @@ a:hover {
     height: 100px !important;
     width: 100px !important;
     border-radius: 50%;
-    border: 5px solid orange;
+    border: 5px solid red;
 }
 .magista_test-image {
   height: 100px;

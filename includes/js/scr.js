@@ -1,3 +1,3 @@
 jQuery(function(){
-    window.scrollReveal = new scrollReveal({reset:false, move:'50px'});
+    window.scrollReveal = new scrollReveal({reset:true, move:'50px'});
 });

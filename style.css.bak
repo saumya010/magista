@@ -66,7 +66,7 @@ h6 {
     width: 24%;
 }
 .magista_grid{
-    border: 4px solid #db6d00;
+    border: 4px solid steelblue;
     text-align: center;
     padding:0px;
     margin:0px 5px; 
@@ -80,7 +80,7 @@ h6 {
 }
 .magista_video_section{
   text-align: center;
-  background-color: #db6d00;
+  background-color: #3695eb;
   padding: 50px 0;
 }
 a {
@@ -113,7 +113,7 @@ a:hover {
     height: 100px !important;
     width: 100px !important;
     border-radius: 50%;
-    border: 5px solid orange;
+    border: 5px solid steelblue;
 }
 .magista_test-image {
   height: 100px;
@@ -129,15 +129,25 @@ a:hover {
   height: 250px;
   width: 250px;
   margin-bottom: 50px;
-  border: 5px solid #db6d00;
+  border: 5px solid #3695eb;
 }
 .magista_post-img img {
   height: 250px;
 }
 .magista_foot {
-  background-color: #db6d00;
+  background-color: #3695eb;
   text-align: center;
   padding: 20px;
+}
+.navbar-default .navbar-nav > .active > a:hover{
+    background-color: transparent;
+    color:white;
+}
+.navbar-default .navbar-nav > .active > a{
+    padding-bottom: 8px;
+    color:white;
+    transition: border .4s ease-in-out;
+    background-color: transparent;
 }
 /* Alignment */
 .alignleft {
@@ -267,7 +277,7 @@ object {
 }
 .navbar-default{
     height: 51px;
-    background-color: #db6d00;
+    background-color: steelblue;
     border-color:transparent;
 }
 .navbar{
@@ -324,7 +334,7 @@ object {
 .magista_icon-share{
     margin-left: 230px;
     color:white;
-    background-color: #db6d00;
+    background-color: steelblue;
     padding:7px;
 }
 .magista_font_icon i{
@@ -380,7 +390,7 @@ aside .nav > li > a:hover{
 }
 .flex-direction-nav a.flex-next:before{
     content: '\f101';
-    color: #db6d00;
+    color: dodgerblue;
 }
 .flex-direction-nav a:hover{
     background-color: white;
@@ -388,7 +398,7 @@ aside .nav > li > a:hover{
 }
 .flex-direction-nav a.flex-prev:before{
     content: '\f100';
-    color: #db6d00;
+    color: dodgerblue;
 }
 .flex-prev{
     text-align: center !important;
@@ -441,7 +451,7 @@ width: 43px;
 border-radius: 0 3px 3px 0;
 }
 #style-switcher h2 a span {
-    background: url("http://inkthemes.com/wptheme/compass-theme/wp-content/themes/compasstheme/images/switcher.png") no-repeat 10px center transparent;
+ background: url("http://inkthemes.com/wptheme/compass-theme/wp-content/themes/compasstheme/images/switcher.png") no-repeat 10px center transparent;
 -webkit-animation: rotateInfinite 2s infinite linear;
 -webkit-animation: rotateInfinite 2s infinite linear;
 -moz-animation: rotateInfinite 2s infinite linear;
@@ -463,6 +473,7 @@ margin: -2px 0 -9px 8px;
 list-style: none;
 margin: 12px 0px 10px 0;
 overflow: hidden;
+padding: 0;
 }
 .colors li {
 margin: 10px 2px 0px 6px;
@@ -498,6 +509,44 @@ border-radius: 5px;
 }
 .golden{
     background: teal;
+}
+.right-menu{
+    top: auto !important;
+    right: 0;
+    left: auto !important;
+    margin-right: 7.8%;
+    width: 550px;
+}
+a:focus{
+    outline:transparent !important;
+}
+.navbar-default .navbar-nav > li > a:focus{
+    color: white;
+}
+.foot-links{
+    padding: 0;
+}
+.foot-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+.foot-links li i{
+    font-size: 25px;
+}
+.foot-links li:hover i{
+    color:black;
+}
+.foot-links li:hover{
+    background-color:  white;
+    transition: all .5s ease-in;
 }
 .widget_recent_comments li:before{
     font-family: 'FontAwesome' !important;
@@ -545,6 +594,16 @@ margin: 0 auto -4em;
 .footer, .push {
 height: 4em;
 }
+.site-name{
+    position: absolute;
+    z-index: 1243255;
+    margin-left: 40%;
+    margin-top: 10%;
+    color:white;
+    background-color: steelblue;
+    padding: 2%;
+    border-radius: 22px;
+}
 @media screen and (max-width:1348px) {
     .magista_social-icons, .magista_icon-share{
         display:none;
@@ -556,11 +615,7 @@ height: 4em;
         font-size: 14px;
     }
     .navbar-default .navbar-nav > li{
-        width: 70px !important;
         text-align: center;
-    }
-    #main-menu{
-        float:right;
     }
     .magista_test-image img{
         margin: 0 auto;
@@ -602,13 +657,21 @@ height: 4em;
         margin: 0 auto;
     }
 }
+@media screen and (max-width:852px) {    
+    .navbar-default .navbar-nav > li{
+        width: 70px !important;        
+    }
+    .right-menu{
+        margin-right: 0 !important;
+    }
+}
 @media screen and (max-width:752px) {
     .navbar-default .navbar-nav > li > a:hover{
         background-color:whitesmoke;
         color: black;
     }
     .navbar-default .navbar-nav > li > a{
-        background-color: #db6d00;
+        background-color: steelblue;
         border-bottom:  1px solid grey;
     }    
     .navbar-default .navbar-toggle .icon-bar{

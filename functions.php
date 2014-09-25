@@ -104,6 +104,11 @@ function magista_scripts() {
 // load Magista styles
 	wp_enqueue_style( 'magista-style', get_stylesheet_uri() );
         wp_enqueue_style( 'magista-colors', get_template_directory_uri() . '/' );
+        wp_enqueue_style( 'magista-colors', get_template_directory_uri() . '/red.css' );
+        wp_enqueue_style( 'magista-colors', get_template_directory_uri() . '/orange.css' );
+        wp_enqueue_style( 'magista-colors', get_template_directory_uri() . '/green.css' );
+        wp_enqueue_style( 'magista-colors', get_template_directory_uri() . '/purple.css' );
+        wp_enqueue_style( 'magista-colors', get_template_directory_uri() . '/golden.css' );
          $fonts_url='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Roboto:400,300,700';
         	if(!empty($fonts_url)){
 			wp_enqueue_style('font-name',esc_url_raw($fonts_url),array(),null);

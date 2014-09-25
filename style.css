@@ -512,10 +512,7 @@ border-radius: 5px;
 }
 .right-menu{
     top: auto !important;
-    right: 0;
     left: auto !important;
-    margin-right: 7.8%;
-    width: 550px;
 }
 a:focus{
     outline:transparent !important;
